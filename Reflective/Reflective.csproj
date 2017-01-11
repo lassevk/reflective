@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ILGeneratorFluent.DeclareLocal.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
     <Compile Include="ILGeneratorExtensions.cs" />
     <Compile Include="ILGeneratorFluent.Add.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
@@ -146,6 +149,27 @@
     <Compile Include="ILGeneratorFluent.Ldc_I4_S.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
+    <Compile Include="ILGeneratorFluent.Ldloc.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldloc_0.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldloc_1.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldloc_2.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldloc_3.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldloc_Opt.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldloc_S.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
     <Compile Include="ILGeneratorFluent.MarkLabel.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
@@ -159,6 +183,27 @@
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
     <Compile Include="ILGeneratorFluent.Ldc_I4_Opt.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Stloc.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Stloc_0.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Stloc_1.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Stloc_2.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Stloc_3.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Stloc_S.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Stloc_Opt.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

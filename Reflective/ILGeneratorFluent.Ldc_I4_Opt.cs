@@ -4,6 +4,13 @@ namespace Reflective
 {
     public partial struct ILGeneratorFluent
     {
+        /// <summary>
+        /// Pushes a supplied value of type <see cref="Int32"/> onto the evaluation stack as an <see cref="Int32"/>,
+        /// picking the optimal opcode depending the size and range of the value.
+        /// </summary>
+        /// <param name="value">
+        /// The value to push onto the stack.
+        /// </param>
         public ILGeneratorFluent Ldc_I4_Opt(int value)
         {
             switch (value)
