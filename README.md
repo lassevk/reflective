@@ -1,5 +1,7 @@
 # reflective
 
+**NOTE!** This library is *far* from finished. It is currently in a very-much work in progress state.
+
 This library introduces ILGenerator extension methods and wrapper types that makes it a bit more fluent to
 write IL code in your .NET programs.
 
