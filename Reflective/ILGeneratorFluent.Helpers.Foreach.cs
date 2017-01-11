@@ -6,6 +6,7 @@ namespace Reflective
 {
     public partial struct ILGeneratorFluent
     {
+        [NotNull]
         public ILGeneratorFluent Foreach<T>([NotNull] IEnumerable<T> collection, [NotNull] Func<ILGeneratorFluent, T, ILGeneratorFluent> itemFunc)
         {
             if (collection == null)

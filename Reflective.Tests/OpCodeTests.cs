@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Reflection;
 using System.Reflection.Emit;
 using NUnit.Framework;
@@ -11,6 +12,13 @@ namespace Reflective.Tests
     [TestFixture]
     public partial class OpCodeTests
     {
+        private void Test(Func<ILGeneratorFluent, ILGeneratorFluent> builder, Func<ByteGenerator, ByteGenerator> expectedFunc)
+        {
+            var generator = new ByteGenerator();
+            expectedFunc(generator);
+            Test(builder, generator.ToArray());
+        }
+
         private void Test(Func<ILGeneratorFluent, ILGeneratorFluent> builder, params byte[] expected)
         {
             var assemblyName = new AssemblyName("DummyAssembly");

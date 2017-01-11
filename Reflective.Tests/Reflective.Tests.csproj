@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ByteGenerator.cs" />
     <Compile Include="DocumentationAttribute.cs" />
     <Compile Include="ILGeneratorExtensionsTests.cs" />
     <Compile Include="OpCodeTests.Add_Ovf.cs">
@@ -75,11 +76,17 @@
     <Compile Include="OpCodeTests.Arglist.cs">
       <DependentUpon>OpCodeTests.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpCodeTests.Beq.cs">
+      <DependentUpon>OpCodeTests.cs</DependentUpon>
+    </Compile>
     <Compile Include="OpCodeTests.cs" />
     <Compile Include="OpCodeTests.Add.cs">
       <DependentUpon>OpCodeTests.cs</DependentUpon>
     </Compile>
     <Compile Include="OpCodeTests.And.cs">
+      <DependentUpon>OpCodeTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpCodeTests.DefineLabel.cs">
       <DependentUpon>OpCodeTests.cs</DependentUpon>
     </Compile>
     <Compile Include="OpCodeTests.Ldc_i4.cs">
