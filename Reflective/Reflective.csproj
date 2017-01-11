@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Reflective.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -91,6 +92,24 @@
     <Compile Include="ILGeneratorFluent.Helpers.If.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
+    <Compile Include="ILGeneratorFluent.Ldarg_0.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldarg_1.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldarg_2.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldarg_3.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldarg_Opt.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldarg_S.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
     <Compile Include="ILGeneratorFluent.Ldc_I4.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
@@ -134,6 +153,12 @@
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
     <Compile Include="ILGeneratorFluent.Ret.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldarg.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ILGeneratorFluent.Ldc_I4_Opt.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -23,6 +23,12 @@ namespace Reflective
             return this;
         }
 
+        public ILGeneratorFluent Emit(OpCode opcode, short arg)
+        {
+            _ILGenerator.Emit(opcode, arg);
+            return this;
+        }
+
         public ILGeneratorFluent Emit(OpCode opcode, Label label)
         {
             _ILGenerator.Emit(opcode, label);
