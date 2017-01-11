@@ -115,6 +115,9 @@
     <Compile Include="ILGeneratorFluent.Ldc_I4_S.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
+    <Compile Include="ILGeneratorFluent.MarkLabel.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
     <Compile Include="ILGeneratorFluent.Pop.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>

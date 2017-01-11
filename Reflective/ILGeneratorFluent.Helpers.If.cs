@@ -5,7 +5,6 @@ namespace Reflective
 {
     public partial struct ILGeneratorFluent
     {
-        [NotNull]
         public ILGeneratorFluent If(bool expression, [NotNull] Func<ILGeneratorFluent, ILGeneratorFluent> trueFunc, [CanBeNull] Func<ILGeneratorFluent, ILGeneratorFluent> falseFunc = null)
         {
             var fluent = this;

@@ -5,7 +5,6 @@ namespace Reflective
 {
     public partial struct ILGeneratorFluent
     {
-        [NotNull]
         public ILGeneratorFluent Arglist() => Emit(OpCodes.Arglist);
     }
 }

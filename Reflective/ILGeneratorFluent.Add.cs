@@ -5,7 +5,6 @@ namespace Reflective
 {
     public partial struct ILGeneratorFluent
     {
-        [NotNull]
         public ILGeneratorFluent Add() => Emit(OpCodes.Add);
     }
 }

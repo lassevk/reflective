@@ -64,7 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ByteGenerator.cs" />
     <Compile Include="DocumentationAttribute.cs" />
     <Compile Include="ILGeneratorExtensionsTests.cs" />
     <Compile Include="OpCodeTests.Add_Ovf.cs">
