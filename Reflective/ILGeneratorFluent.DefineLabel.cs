@@ -1,5 +1,3 @@
-using JetBrains.Annotations;
-
 namespace Reflective
 {
     public partial struct ILGeneratorFluent

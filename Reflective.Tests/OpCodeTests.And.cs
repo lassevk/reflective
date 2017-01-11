@@ -5,7 +5,7 @@ namespace Reflective.Tests
 {
     public partial class OpCodeTests
     {
-        [Test, Documentation("https://msdn.microsoft.com/en-us/library/system.reflection.emit.opcodes.and(v=vs.110).aspx")]
+        [Test]
         public void And() => Test(il => il.And(), 0x5f);
     }
 }

@@ -77,7 +77,6 @@
     <Compile Include="OpCodeTests.Bge.cs">
       <DependentUpon>OpCodeTests.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocumentationAttribute.cs" />
     <Compile Include="ILGeneratorExtensionsTests.cs" />
     <Compile Include="OpCodeTests.Add_Ovf.cs">
       <DependentUpon>OpCodeTests.cs</DependentUpon>

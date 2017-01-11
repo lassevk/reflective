@@ -4,6 +4,8 @@ using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using JetBrains.Annotations;
 
+using static Reflective.ReSharperHelpers;
+
 namespace Reflective
 {
     /// <summary>
@@ -20,11 +22,8 @@ namespace Reflective
         [NotNull]
         private readonly List<Label> _Labels;
 
-        [NotNull, ItemNotNull]
+        [NotNull]
         private readonly Dictionary<string, LocalBuilder> _LocalsByName;
-
-        [NotNull, ItemNotNull]
-        private readonly List<LocalBuilder> _Locals;
 
         /// <summary>
         /// Constructs a new instance of <see cref="ILGeneratorFluent"/> around the specified <see cref="ILGenerator"/>.
@@ -45,16 +44,16 @@ namespace Reflective
             _LabelsByName = new Dictionary<string, Label>();
             _Labels = new List<Label>();
             _LocalsByName = new Dictionary<string, LocalBuilder>();
-            _Locals = new List<LocalBuilder>();
         }
 
         private Label GetLabel([NotNull] string name) => _LabelsByName[name];
         private Label GetLabel(int index) => _Labels[index];
 
         [NotNull]
-        private LocalBuilder GetLocal([NotNull] string name) => _LocalsByName[name];
-
-        [NotNull]
-        private LocalBuilder GetLocal(int index) => _Locals[index];
+        private LocalBuilder GetLocal([NotNull] string name)
+        {
+            assume(_LocalsByName[name] != null);
+            return _LocalsByName[name];
+        }
     }
 }

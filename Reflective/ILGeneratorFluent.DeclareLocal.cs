@@ -24,7 +24,6 @@ namespace Reflective
                 throw new ArgumentNullException(nameof(type));
 
             var local = _ILGenerator.DeclareLocal(type);
-            _Locals.Add(local);
             if (name != null)
                 _LocalsByName.Add(name, local);
 
@@ -50,7 +49,6 @@ namespace Reflective
                 throw new ArgumentNullException(nameof(type));
 
             var local = _ILGenerator.DeclareLocal(type, true);
-            _Locals.Add(local);
             if (name != null)
                 _LocalsByName.Add(name, local);
 
