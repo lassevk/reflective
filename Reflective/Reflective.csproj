@@ -63,6 +63,9 @@
     <Compile Include="ILGeneratorFluent.Beq.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
+    <Compile Include="ILGeneratorFluent.Beq_S.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
     <Compile Include="ILGeneratorFluent.cs" />
     <Compile Include="ILGeneratorFluent.DefineLabel.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>

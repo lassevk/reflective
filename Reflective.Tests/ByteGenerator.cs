@@ -10,14 +10,14 @@ namespace Reflective.Tests
         private readonly List<Byte> _Bytes = new List<byte>();
 
         [NotNull]
-        public ByteGenerator Byte(byte value)
+        public ByteGenerator Byte(int value)
         {
-            _Bytes.Add(value);
+            _Bytes.Add((byte)(value & 0xff));
             return this;
         }
 
         [NotNull]
-        public ByteGenerator Int32(int value) => Byte((byte)(value & 0xff)).Byte((byte)((value >> 8) & 0xff)).Byte((byte)((value >> 16) & 0xff)).Byte((byte)((value >> 24) & 0xff));
+        public ByteGenerator Int32(int value) => Byte(value & 0xff).Byte((value >> 8) & 0xff).Byte((value >> 16) & 0xff).Byte((value >> 24) & 0xff);
 
         public byte[] ToArray() => _Bytes.ToArray();
     }

@@ -79,6 +79,9 @@
     <Compile Include="OpCodeTests.Beq.cs">
       <DependentUpon>OpCodeTests.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpCodeTests.Beq_S.cs">
+      <DependentUpon>OpCodeTests.cs</DependentUpon>
+    </Compile>
     <Compile Include="OpCodeTests.cs" />
     <Compile Include="OpCodeTests.Add.cs">
       <DependentUpon>OpCodeTests.cs</DependentUpon>
