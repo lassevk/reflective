@@ -64,6 +64,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OpCodeTests.Bge_Un_S.cs">
+      <DependentUpon>OpCodeTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpCodeTests.Bge_Un.cs">
+      <DependentUpon>OpCodeTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpCodeTests.Bge_S.cs">
+      <DependentUpon>OpCodeTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpCodeTests.Bge.cs">
+      <DependentUpon>OpCodeTests.cs</DependentUpon>
+    </Compile>
     <Compile Include="DocumentationAttribute.cs" />
     <Compile Include="ILGeneratorExtensionsTests.cs" />
     <Compile Include="OpCodeTests.Add_Ovf.cs">
