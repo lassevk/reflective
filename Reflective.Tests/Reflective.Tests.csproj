@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MissingImplementation.cs" />
     <Compile Include="OpCodeTests.Bge_Un_S.cs">
       <DependentUpon>OpCodeTests.cs</DependentUpon>
     </Compile>
