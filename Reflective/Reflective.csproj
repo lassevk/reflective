@@ -206,6 +206,9 @@
     <Compile Include="ILGeneratorFluent.Stloc_Opt.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
+    <Compile Include="ILGeneratorFluent.Xor.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReSharperHelpers.cs" />
   </ItemGroup>

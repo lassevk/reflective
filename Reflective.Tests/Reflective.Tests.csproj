@@ -145,6 +145,9 @@
     <Compile Include="OpCodeTests.Ret.cs">
       <DependentUpon>OpCodeTests.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpCodeTests.Xor.cs">
+      <DependentUpon>OpCodeTests.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
