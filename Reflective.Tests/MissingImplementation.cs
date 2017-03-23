@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection.Emit;
 using NUnit.Framework;
 
@@ -21,7 +22,7 @@ namespace Reflective.Tests
         [TestCaseSource(nameof(TestCases))]
         public void ImplementationExists(string opcode)
         {
-            bool implementationExists = typeof(ILGeneratorFluent).GetMethod(opcode) != null;
+            bool implementationExists = typeof(ILGeneratorFluent).GetMethods().Any(m => m.Name == opcode);
             Assert.That(implementationExists);
         }
     }
