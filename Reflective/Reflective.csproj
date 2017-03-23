@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ILGeneratorFluent.Bgt.cs">
+      <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
+    </Compile>
     <Compile Include="ILGeneratorFluent.DeclareLocal.cs">
       <DependentUpon>ILGeneratorFluent.cs</DependentUpon>
     </Compile>
