@@ -11,6 +11,7 @@ namespace Reflective
     /// <summary>
     /// This struct encapsulates a <see cref="ILGenerator"/> and provides a fluent interface for it.
     /// </summary>
+    [PublicAPI]
     public partial struct ILGeneratorFluent
     {
         [NotNull]
@@ -37,10 +38,7 @@ namespace Reflective
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public ILGeneratorFluent([NotNull] ILGenerator ilGenerator)
         {
-            if (ilGenerator == null)
-                throw new ArgumentNullException(nameof(ilGenerator));
-
-            _ILGenerator = ilGenerator;
+            _ILGenerator = ilGenerator ?? throw new ArgumentNullException(nameof(ilGenerator));
             _LabelsByName = new Dictionary<string, Label>();
             _Labels = new List<Label>();
             _LocalsByName = new Dictionary<string, LocalBuilder>();

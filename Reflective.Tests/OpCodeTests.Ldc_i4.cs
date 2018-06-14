@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 // ReSharper disable PossibleNullReferenceException
 // ReSharper disable InconsistentNaming
